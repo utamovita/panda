@@ -1,0 +1,25 @@
+@import "./variables";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: $f-baseFontFamily;
+}
+
+h1 {
+  font-family: "Dejavu Sans"
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}

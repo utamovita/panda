@@ -1,0 +1,11 @@
+@import "../../variables";
+@import "../../fonts";
+@import "../../global";
+@import "../../normalize";
+@import "../../mixins";
+
+/* import components styles
+************************************************************** */
+
+@import "./components/header";
+@import "./components/nav";

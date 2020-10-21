@@ -1,0 +1,23 @@
+$dejavuSansURL: '../fonts/dejavu-sans';
+
+@font-face {
+  font-family: 'Dejavu Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Dejavu Sans'),
+       local('Dejavu-Sans-Regular'),
+       url(#{$dejavuSansURL}/DejaVuSans.ttf) format('truetype');
+}
+
+$lalezarURL: '../fonts/lalezar';
+
+@font-face {
+  font-family: 'Lalezar';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lalezar'),
+       local('Lalezar-Regular'),
+       url(#{$lalezarURL}/Lalezar-Regular.ttf) format('truetype');
+}

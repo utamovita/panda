@@ -1,0 +1,88 @@
+.nav {
+  .menu {
+    position: absolute;
+    left: -100%;
+    transition: 0.3s ease-in-out;
+    background-color: $c-mineShaft;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    list-style-type: none;
+    padding: 75px 0 0 0;
+    z-index: map-get($z-index, nav);
+
+    &__item {
+      color: $c-wildSand;
+      text-align: center;
+      font-size: 2rem;
+      padding: $space-small 0;
+    }
+  }
+
+  .hamburger {
+    display: block;
+    width: 40px;
+    height: 25px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    z-index: map-get($z-index, hamburger);
+
+    &__bar {
+      display: block;
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      background-color: $c-mineShaftDark;
+      border-radius: 9px;
+      left: 0;
+      transform: rotate(0deg);
+      transition: 0.25s ease-in-out;
+
+      &:nth-child(1) {
+        top: 0px;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        top: 9px;
+      }
+
+      &:nth-child(4) {
+        top: 18px;
+      }
+    }
+  }
+
+  &.opened {
+    .menu {
+      left: 0;
+    }
+
+    .hamburger__bar {
+      background-color: $c-white;
+
+      &:nth-child(1) {
+        top: 9px;
+        width: 0%;
+        left: 50%;
+      }
+
+      &:nth-child(2) {
+        transform: rotate(45deg);
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+      }
+
+      &:nth-child(4) {
+        top: 9px;
+        width: 0%;
+        left: 50%;
+      }
+    }
+  }
+}
