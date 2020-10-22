@@ -29,7 +29,10 @@
     transition: 0.5s ease-in-out;
     cursor: pointer;
     z-index: map-get($z-index, hamburger);
-
+    background: none;
+    border: none;
+    outline: none;
+    
     &__bar {
       display: block;
       position: absolute;
@@ -83,6 +86,23 @@
         width: 0%;
         left: 50%;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: $break-sm) {
+  .nav {
+    .menu {
+      max-width: 345px;
+
+      &__item {
+        text-align: left;
+        padding: $space-small 35px;
+      }
+    }
+
+    .hamburger {
+      margin-left: -5px;
     }
   }
 }

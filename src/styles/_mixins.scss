@@ -1,0 +1,17 @@
+@mixin AddToCartBtn {
+  display: block;
+  background-color: $c-stratos;
+  color: $c-white;
+  padding: 5px $space-x-small;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.75rem;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: $c-chathamsBlue;
+  }
+}

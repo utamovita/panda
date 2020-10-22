@@ -1,4 +1,4 @@
-/* =Colors
+/* colors
 ************************************************************** */
 
 $c-white: #fff;
@@ -12,13 +12,13 @@ $c-stratos: #00194c;
 $c-accentPrimary: $c-white;
 $c-accentSecondary: $c-black;
 
-/* =fonts
+/* fonts
 ************************************************************** */
 
 $f-baseFontFamily: "Lalezar";
 $f-dejavuSans: "Dejavu Sans";
 
-/* =paddings, margins
+/* paddings, margins
 ************************************************************** */
 
 $space-x-small: 10px;
@@ -28,7 +28,16 @@ $space-medium: 30px;
 $space-large: 40px;
 $space-x-large: 50px;
 
-/* =z-index
+
+/* breakpoints
+************************************************************** */
+
+$break-xs: 450px;
+$break-sm: 770px;
+$break-md: 1200px;
+$break-lg: 1600px;
+
+/* z-index
 ************************************************************** */
 
 $z-index: (
