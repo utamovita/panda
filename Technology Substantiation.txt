@@ -1,4 +1,4 @@
 --- See: overview.html, Requirements no. 13 ---
 
-Your answer: React.js(CRA)
+Your answer: React.js(CRA) + Redux for state management
 ...
